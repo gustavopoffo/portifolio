@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaHeart } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -14,9 +14,7 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-2 text-gray-500 text-sm"
           >
-            <span>Feito com</span>
-            <FaHeart className="text-red-500/80" size={14} />
-            <span>por</span>
+            <span>Feito por</span>
             <span className="text-gray-300 font-medium">Gustavo Poffo</span>
             <span className="text-gray-600">• {currentYear}</span>
           </motion.div>
